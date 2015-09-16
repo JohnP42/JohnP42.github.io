@@ -55,8 +55,22 @@ section {
 	color: black;
 }
 
+section .archive {
+	background-color: #969696;
+	width: 10%;
+	min-height: 300px;
+	min-width: 150px;
+	float: left;
+	margin: 5px;
+}
+
+.archive a {
+	text-decoration: none;
+	color: #CC0000;
+}
+
 footer {
-	position: absolute;
+	position: fixed;
 	background-color: #202020;
 	text-align: center;
 	border-top: 2px solid #B6B6B6;
