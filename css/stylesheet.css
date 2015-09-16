@@ -17,11 +17,14 @@ header {
 }
 
 nav li {
+	display: inline-block;
+}
+
+nav a {
 	background-color: #B6B6B6;
 	border: 2px solid #F0F0F0;
 	border-radius: 5px;
 	color: #B81D18;
-	display: inline-block;
 	font-family: Impact;
 	font-size: 16px;
 	padding: 5px;
@@ -29,7 +32,7 @@ nav li {
 	transition: 0.5s;
 }
 
-nav li:hover {
+nav a:hover {
 	padding: 8px;
 	color: #F0F0F0;
 	transition: 0.5s;
@@ -42,7 +45,7 @@ nav li:hover {
 	margin: 5px;
 }
 
-.center {
+section {
 	background-color: #B6B6B6;
 	text-align: left;
 	border: 2px solid #202020;
