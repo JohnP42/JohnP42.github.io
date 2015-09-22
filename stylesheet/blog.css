@@ -16,3 +16,18 @@ aside a {
 	text-decoration: none;
 	color: #CC0000;
 }
+
+img {
+	display: block;
+	margin:5px auto;
+}
+
+.special {
+	transition: 0.5s;
+	border: 1px solid black;
+}
+
+.special:hover {
+	border: 1px solid red;
+	transition: 0.5s;
+}
