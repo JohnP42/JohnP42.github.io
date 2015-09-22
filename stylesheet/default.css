@@ -1,15 +1,13 @@
 body {
 	background-color: #B81D18;
 	color: #F0F0F0;
-
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	background-color: #202020;
 	text-align: center;
 	height: 130px;
-	width: 100%;
 	top: 0px;
 	left: 0px;
 	right: 0px;
@@ -45,28 +43,27 @@ nav a:hover {
 	margin: 5px;
 }
 
+main {
+	margin: 130px auto;
+	padding: 130px 5px;
+}
+
 section {
 	background-color: #B6B6B6;
 	text-align: left;
 	border: 2px solid #202020;
-	margin: 12% auto;
+	margin: auto;
 	min-height: 310px;
+	min-width: 600px;
 	width: 60%;
 	color: black;
 }
 
-section .archive {
-	background-color: #969696;
-	width: 10%;
-	min-height: 300px;
-	min-width: 150px;
-	float: left;
-	margin: 5px;
-}
-
-.archive a {
-	text-decoration: none;
-	color: #CC0000;
+#game {
+	text-align: center;
+	font-family: Impact;
+	font-size: 18px;
+	margin-top: 20px;
 }
 
 footer {
