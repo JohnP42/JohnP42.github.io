@@ -38,89 +38,91 @@
       </ul>
     </aside>
 
-    <h2>Week 3</h2>
-    <h2>Margins Padding and Borders</h2>
-    <h4>9/22/2015</h4>
+    <article>
+      <h2>Week 3</h2>
+      <h2>Margins Padding and Borders</h2>
+      <h4>9/22/2015</h4>
 
-    <p>
-      Margin, border, and padding are some of the most fundamental parts of css when it comes to positioning elements on your web page, So here is a quick introduction followed by a couple tricks that you may not yet have learned. In the simplest terms, border is the outline of the rectangle that is your element, margin is the extra distance outside of the border, and padding is the distance from the border to the content. I think this picture sums it up very nicely. 
-    </p>
-    <img src="../imgs/mbpc.png" alt="w3school box-model">
-    <hr>
-    <p>
-      So, lets start with a few tips for using margin. To center an element horizontally, define a width and set the left and right margins to auto.
-    </p>
-    <blockquote class='special'>
-      CSS<br><br>
-        Section {<br>
-          &nbsp;width: 300px;<br>
-          &nbsp;margin: 0 auto;<br>
+      <p>
+        Margin, border, and padding are some of the most fundamental parts of css when it comes to positioning elements on your web page, So here is a quick introduction followed by a couple tricks that you may not yet have learned. In the simplest terms, border is the outline of the rectangle that is your element, margin is the extra distance outside of the border, and padding is the distance from the border to the content. I think this picture sums it up very nicely. 
+      </p>
+      <img src="../imgs/mbpc.png" alt="w3school box-model">
+      <hr>
+      <p>
+        So, lets start with a few tips for using margin. To center an element horizontally, define a width and set the left and right margins to auto.
+      </p>
+      <blockquote class='special'>
+        CSS<br><br>
+          Section {<br>
+            &nbsp;width: 300px;<br>
+            &nbsp;margin: 0 auto;<br>
+          }
+      </blockquote>
+      <p>
+        Also, vertical margins will collapse upon each other rather than add together. The distance of elements that are stacked on top of each other will be the greater of the margins for those elements, rather than the total distance of both element's margins. For example:
+      </p>
+      <blockquote class='special'>
+        HTML<br><br>
+        &#60;h1&#62;Big Words&#60;/h1&#62;<br>
+        &#60;p&#62;superfluous polysyllabic words including three monosyllabic words&#60;p&#62;<br><br>
+
+        CSS<br><br>
+          h1 {<br>
+            &nbsp;margin: 20px 0;<br>
+          }<br><br>
+
+          p { <br>
+            &nbsp;margin-top: 30px;<br>
+          }
+      </blockquote>
+      <p>
+        In this scenario, h1 has a bottom margin of 20px, and p has a top margin of 30px, so one would expect the total distance between h1 and p would be 50px. However, the distance will actually be the greater of the two, so the total distance will be 30px. But, if you add a border the total distance will add instead, making the total distance 50px.
+      </p>
+      <hr>
+      <p> 
+        Now lets get a few tips for padding. The size of an element when using padding is equal to the width or height plus the padding, rather than the just the assigned width or height. For example:
+      </p>
+      <blockquote class='special'>
+        CSS<br><br>
+        div {<br>
+          &nbsp;width: 100px;<br>
+          &nbsp;padding: 20px;<br>
         }
-    </blockquote>
-    <p>
-      Also, vertical margins will collapse upon each other rather than add together. The distance of elements that are stacked on top of each other will be the greater of the margins for those elements, rather than the total distance of both element's margins. For example:
-    </p>
-    <blockquote class='special'>
-      HTML<br><br>
-      &#60;h1&#62;Big Words&#60;/h1&#62;<br>
-      &#60;p&#62;superfluous polysyllabic words including three monosyllabic words&#60;p&#62;<br><br>
-
-      CSS<br><br>
-        h1 {<br>
-          &nbsp;margin: 20px 0;<br>
+      </blockquote>
+      <p>
+        On might expect the total width of the box to be 100px, since it was assigned a width of 100px. However, the actual width of the box will be 140px (100px + 20px + 20px). You may choose to change this using: 
+      </p>
+      <blockquote class='special'>
+        CSS<br><br>
+        div {<br>
+          &nbsp;width: 100px;<br>
+          &nbsp;padding: 20px;<br>
+          &nbsp;box-sizing: border-box;<br>
+        }
+      </blockquote>
+      <p>
+        This will make the total width equal to 100px with 20px padding between the content and border.
+      </p>
+      <hr>
+      <p>
+        Also, borders are cool... Okay, since borders are very straight forward I will include a special bonus tip instead. If you would like to have an element that changes when the mouse hovers over it try this: 
+      </p>
+      <blockquote class='special'>
+        CSS <br><br>
+        div {<br>
+          &nbsp;border: 1px solid black;<br>
+          &nbsp;transition: 0.5s;<br>
         }<br><br>
 
-        p { <br>
-          &nbsp;margin-top: 30px;<br>
+        div:hover {<br>
+          &nbsp;border: 1px solid red;<br>
+          &nbsp;transition: 0.5s;<br>
         }
-    </blockquote>
-    <p>
-      In this scenario, h1 has a bottom margin of 20px, and p has a top margin of 30px, so one would expect the total distance between h1 and p would be 50px. However, the distance will actually be the greater of the two, so the total distance will be 30px. But, if you add a border the total distance will add instead, making the total distance 50px.
-    </p>
-    <hr>
-    <p> 
-      Now lets get a few tips for padding. The size of an element when using padding is equal to the width or height plus the padding, rather than the just the assigned width or height. For example:
-    </p>
-    <blockquote class='special'>
-      CSS<br><br>
-      div {<br>
-        &nbsp;width: 100px;<br>
-        &nbsp;padding: 20px;<br>
-      }
-    </blockquote>
-    <p>
-      On might expect the total width of the box to be 100px, since it was assigned a width of 100px. However, the actual width of the box will be 140px (100px + 20px + 20px). You may choose to change this using: 
-    </p>
-    <blockquote class='special'>
-      CSS<br><br>
-      div {<br>
-        &nbsp;width: 100px;<br>
-        &nbsp;padding: 20px;<br>
-        &nbsp;box-sizing: border-box;<br>
-      }
-    </blockquote>
-    <p>
-      This will make the total width equal to 100px with 20px padding between the content and border.
-    </p>
-    <hr>
-    <p>
-      Also, borders are cool... Okay, since borders are very straight forward I will include a special bonus tip instead. If you would like to have an element that changes when the mouse hovers over it try this: 
-    </p>
-    <blockquote class='special'>
-      CSS <br><br>
-      div {<br>
-        &nbsp;border: 1px solid black;<br>
-        &nbsp;transition: 0.5s;<br>
-      }<br><br>
-
-      div:hover {<br>
-        &nbsp;border: 1px solid red;<br>
-        &nbsp;transition: 0.5s;<br>
-      }
-    </blockquote> 
-    <p>
-      This will make it so that when you hover your mouse over a div its border will turn red instead of black, and back to black when your done hovering. The transition will also make this shift gradual over a certain time rather than instant. Well, hopefully you learned something new by reading this. Hope you all are having fun at DBC!
-    </p>
+      </blockquote> 
+      <p>
+        This will make it so that when you hover your mouse over a div its border will turn red instead of black, and back to black when your done hovering. The transition will also make this shift gradual over a certain time rather than instant. Well, hopefully you learned something new by reading this. Hope you all are having fun at DBC!
+      </p>
+    </article>
   </section>
 </main>
 
