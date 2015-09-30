@@ -23,7 +23,6 @@ nav a {
 	border: 3px outset red;
 	border-radius: 5px;
 	color: #B81D18;
-	font-family: Impact;
 	font-size: 16px;
 	padding: 5px;
 	text-decoration: none;
@@ -63,7 +62,6 @@ section {
 
 #game {
 	text-align: center;
-	font-family: Impact;
 	font-size: 18px;
 	margin-top: 20px;
 }
