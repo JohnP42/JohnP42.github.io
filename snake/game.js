@@ -97,16 +97,16 @@ var update = function (modifier) {
 		snakeHead.body[i].y = snakeHead.body[i].parent.y;
 	}
 
-	if (87 in keysDown) { // Player holding up
+	if (87 in keysDown && snakeHead.dir !== 'D') { // Player holding up
 		snakeHead.dir = 'U';
 	}
-	if (83 in keysDown) { // Player holding down
+	if (83 in keysDown && snakeHead.dir !== 'U') { // Player holding down
 		snakeHead.dir = 'D';
 	}
-	if (65 in keysDown) { // Player holding left
+	if (65 in keysDown && snakeHead.dir !== 'R') { // Player holding left
 		snakeHead.dir = 'L';
 	}
-	if (68 in keysDown) { // Player holding right
+	if (68 in keysDown && snakeHead.dir !== 'L') { // Player holding right
 		snakeHead.dir = 'R';
 	}
 
@@ -132,7 +132,7 @@ var update = function (modifier) {
 		food.relocate();
 	}
 	else if(objectAtPoint(snakeHead.x, snakeHead.y, snakeHead) !== 0 ||
-		(snakeHead.x < 0 || snakeHead.x >=16) || (snakeHead.y < 0 || snakeHead.y >=16))
+		(snakeHead.x < 0 || snakeHead.x >=20) || (snakeHead.y < 0 || snakeHead.y >=20))
 	{
 		reset();
 	}
@@ -141,7 +141,7 @@ var update = function (modifier) {
 
 //Draw Everything
 var render = function() {
-	var s = 30;//Scale
+	var s = 24;//Scale
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
 
