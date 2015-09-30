@@ -74,6 +74,7 @@ footer {
 	text-align: center;
 	border-top: 2px solid #B6B6B6;
 	height: 15%;
+	min-height: 130px;
 	left: 0px;
 	right: 0px;
 }
