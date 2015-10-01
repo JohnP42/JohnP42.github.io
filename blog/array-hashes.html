@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <title>John's Tech Blog 1</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/blog.css">
+  <script src="../jquery/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>John Polhill</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section>
+
+    <aside>
+      <h5>Posts:</h5>
+      <ul>
+        <li><a href="t1-git-blog.html">Week 1</a></li>
+        <li><a href="css-concepts.html">Week 3</a></li>
+        <li><a href="array-hashes.html">Week 4</a></li>
+        <li>Week 5</li>
+        <li>Week 6</li>
+        <li>Week 7</li>
+        <li>Week 8</li>
+      </ul>
+    </aside>
+
+    <article>
+      <h2>Week 4</h2>
+      <h2>Arrays and Hashes</h2>
+      <h4>9/30/2015</h4>
+
+      <p>Arrays and hashes are both able to store multiple objects, but in different ways. So, here are some interactive demonstrations to show how each work.</p>
+
+      <p>First, the array which stores objects in a linear fashion, much like a to do list. You can add, remove, or change items in the list. Always remember, an array counts from 0.</p>
+
+      <section id="array"> 
+        <h3>An Array Example</h3>  
+        <button type="button" id="push">push item</button>
+        <input type="text" name="item" value="item">
+        <ul>
+        </ul>
+        <button type="button" id="pop">pop item</button><br>
+
+        <button type="button" id="get">get item</button>
+        <input type="text" name="input" value="0"><br>
+        <p id="output"></p>
+      </section>
+
+      <p>Okay, now for hashes. A hash works by using a key and value. The key points to a value, and you may have multiples of the same value, but each key must be unique.</p>
+
+      <section id="hash">   
+        <h3>A Hash Example</h3>  
+        <button type="button" id="add">add key-value</button>
+        <input type="text" name="key" value="key">
+        <input type="text" name="value" value="value">
+        <ul>
+        </ul>
+        <button type="button" id="remove">remove key</button>
+        <button type="button" id="get_key">get key</button>
+        <input type="text" name="input_key" value="key"><br>
+        <p id="output_value"></p>
+      </section>
+
+      <p>Anyway, I hope that these interactive examples helped explain arrays and hashes better than I could with words.</p>
+
+    </article>
+  </section>
+</main>
+
+<footer>
+  <h4>My Social Media Pages</h4>
+  <ul>
+    <li><a href="https://www.facebook.com/john.polhill.3">My Facebook</a></li>
+    <li><a href="https://www.linkedin.com/profile/view?id=AAIAABqp07wByyz-f2f-dwmX4z2h9xvQtDSoj9s">My LinkedIn</a></li>
+    <li><a href="https://github.com/JohnP42">My GitHub</a></li>
+    <li><a href="https://twitter.com/JohnPolhill42">Twitter @JohnPolhill42</a></li>
+  </ul>
+</footer>
+
+  <script src="scripts/array-hashes.js"></script>
+</body>
