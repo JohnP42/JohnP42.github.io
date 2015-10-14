@@ -46,7 +46,7 @@ nav a:hover {
 main {
 	margin: 50px auto 0px auto;
 	padding: 130px 5px;
-	min-height: 483px;
+	min-height: 520px;
 }
 
 section {
@@ -82,10 +82,9 @@ footer {
 
 footer li {
 	display: inline-block;
-	padding: 5px;
+	padding: 5px 10px;
 }
 
 footer a {
 	text-decoration: none;
-	color: #B6B6B6;
 }
