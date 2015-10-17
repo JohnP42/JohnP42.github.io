@@ -62,11 +62,8 @@ section {
 	color: black;
 }
 
-#game {
+.center {
 	text-align: center;
-	font-family: Impact;
-	font-size: 18px;
-	margin-top: 20px;
 }
 
 footer {
