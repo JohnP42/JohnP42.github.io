@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John's Tech Blog 1</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>John Polhill</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section>
+
+    <aside>
+      <h5>Posts:</h5>
+      <ul>
+        <li><a href="t1-git-blog.html">Week 1</a></li>
+        <li><a href="css-concepts.html">Week 3</a></li>
+        <li><a href="array-hashes.html">Week 4</a></li>
+        <li><a href="enumerable-methods.html">Week 5</a></li>
+        <li><a href="ruby-classes.html">Week 6</a></li>
+        <li>Week 7</li>
+        <li>Week 8</li>
+      </ul>
+    </aside>
+
+    <article>
+      <h2>Week 6</h2>
+      <h2>Rectangle and Square Class</h2>
+      <h4>10/18/2015</h4>
+
+      <p>Classes can be used to represent almost any real world object, but for this demonstration I will be using the very simple object, Rectangle.</p>
+
+      <pre>
+        Class Rectangle
+
+          def initialize(width, height)
+            @width = width
+            @height = height
+          end
+
+          def area
+            @width * @height
+          end
+
+          def parameter
+            @width*2 + @height*2
+          end 
+        end
+      </pre>
+
+      <p>But, what if you want to make another object, Square? Well, there is no need to write another class with this much content. Since we know that all squares are rectangles with the height equaling the width, we can have the square class inherit from rectangle.</p>
+
+      <pre>
+        Class Square &lt; Rectangle
+
+          def initialize(width)
+            @width = width
+            @height = width
+          end
+        end
+      </pre>
+
+      <p>This lets the Square class inherit from the Rectangle class, thus allowing instances of the Square class to use the methods from the Rectangle class. So, now if you can do this:</p>
+
+      <pre>
+        small_square = Square.new(5)
+        small_square.area # => 25
+        small_square.parameter # => 20
+      </pre>
+
+    </article>
+  </section>
+</main>
+
+  <footer>
+    <h4>Contact Me</h4>
+    <ul>
+      <li>
+        <a href="mailto:JohnPolhill42@gmail.com" target="_blank">
+          <img src="../imgs/mail-icon.png" alt="E-mail" height="32">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/john.polhill.3" target="_blank">
+          <img src="../imgs/fb-icon.png" alt="Facebook" height="32">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/profile/view?id=AAIAABqp07wByyz-f2f-dwmX4z2h9xvQtDSoj9s" target="_blank">
+          <img src="../imgs/in-icon.png" alt="LinkdIn" height="32">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/JohnP42" target="_blank">
+          <img src="../imgs/git-icon.png" alt="Github" height="32">
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/JohnPolhill42" target="_blank">
+          <img src="../imgs/twitter-icon.png" alt="Twitter" height="32">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+</html>
