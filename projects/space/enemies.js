@@ -29,13 +29,13 @@ function Peon() {
 	this.y = -32;
 	this.img = imgPeon;
 	this.speed = Math.floor(Math.random() * 50) + 100;
-	this.moveDown = Math.floor(Math.random() * 300) + 100;
+	this.moveDown = Math.floor(Math.random() * 200) + 100;
 	this.dirX = 1;
 	this.reloading = 0;
 
 	this.update = function(mod) {
 		if(this.moveDown > this.y)
-			this.y += this.speed * mod * 4;
+			this.y += this.speed * mod * Math.max(score / 200, 1);
 		else {
 			if((this.x <= 0 && this.dirX === -1) || (this.x >= 448 && this.dirX === 1))
 				this.dirX *= -1;
@@ -78,7 +78,7 @@ function Beamer() {
 
 	this.update = function(mod) {
 		if(this.moveDown > this.y)
-			this.y += this.speed * mod * 4;
+			this.y += this.speed * mod * Math.max(score / 200, 1);
 		else {
 
 			if(this.waitTime > 0)
