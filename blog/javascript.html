@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John's Tech Blog 6</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheet/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>John Polhill</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects/index.html">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section>
+
+    <aside>
+      <h5>Posts:</h5>
+      <ul>
+        <li><a href="t1-git-blog.html">Week 1</a></li>
+        <li><a href="css-concepts.html">Week 3</a></li>
+        <li><a href="array-hashes.html">Week 4</a></li>
+        <li><a href="enumerable-methods.html">Week 5</a></li>
+        <li><a href="ruby-classes.html">Week 6</a></li>
+        <li><a href="javascript.html">Week 7</a></li>
+        <li>Week 8</li>
+      </ul>
+    </aside>
+
+    <article>
+      <h2>Week 7</h2>
+      <h2>Ruby Class vs Javascript Constructor Function</h2>
+      <h4>10/22/2015</h4>
+
+      <p>Both classes in Ruby and Javascript constructor functions are used as templates for creating objects ,so for those of you who don't like to read too much, here is a short and concise comparison of Ruby classes and Javascript constructor functions in the making of a Car object.</p>
+
+      <div class="row">
+        <div class="col">
+          <p>Define Ruby class</p>
+          <pre>
+class Car 
+
+end
+          </pre>
+        </div>
+        <div class="col">
+          <p>Define Javascript constructor function</p>
+          <pre>
+function Car() {
+
+}
+          </pre>
+        </div>
+      </div>
+
+      <p>Pretty stright forward so far, this is just how to define a new class/constructor-function. Next I'll show how to initialize their variables.</p>
+          
+      <div class="row">
+        <div class="col">
+          <p>Ruby initialization</p>
+          <pre>
+class Car 
+
+  def initialize(speed, color)
+    @speed = speed
+    @color = color
+  end
+
+end
+          </pre>
+        </div>
+        <div class="col">
+          <p>Javascript initialization</p>
+          <pre>
+function Car(speed, color) {
+
+  this.speed = speed;
+  this.color = color;
+
+}
+
+
+          </pre>
+        </div>
+      </div>
+      <p>The above creates the instance variables speed and color. Ruby initializes using the initialize method, while Javascript's constructor function calls it's self when created, so the variables get initialized in the body of the function. Now for adding an instance method.</p>
+
+      <div class="row">
+        <div class="col">
+          <p>Ruby instance method</p>
+          <pre>
+class Car 
+
+  def initialize(speed, color)
+    @speed = speed
+    @color = color
+  end
+
+  def max_speed
+    return "This car can go over #{@speed}mph!"
+  end
+
+end
+          </pre>
+        </div>
+        <div class="col">
+          <p>Javascript instance method</p>
+          <pre>
+function Car(speed, color) {
+
+  this.speed = speed;
+  this.color = color;
+
+}
+
+Car.prototype = {
+  max_speed: function max_speed() {
+    return "This car can go over " + this.speed + "mph!";
+  }
+}
+          </pre>
+        </div>
+      </div>
+
+      <p>Now it's starting to look a bit different. Javascript functions get a property called prototype, and every object constructed inherits the properties from it. Lastly, it's time to instantiate objects.</p>
+
+      <div class="row">
+        <div class="col">
+          <p>Ruby instantiate object</p>
+          <pre>
+class Car 
+
+  def initialize(speed, color)
+    @speed = speed
+    @color = color
+  end
+
+  def max_speed
+    return "This car can go over #{@speed}mph!"
+  end
+
+end
+
+myCar = Car.new(9000, "red")
+myCar.max_speed # => "This car can go over 9000mph!"
+          </pre>
+        </div>
+        <div class="col">
+          <p>Javascript instantiate object</p>
+          <pre>
+function Car(speed, color) {
+
+  this.speed = speed;
+  this.color = color;
+
+}
+
+Car.prototype = {
+  max_speed: function max_speed() {
+    return "This car can go over " + this.speed + "mph!";
+  }
+}
+
+var myCar = new Car(9000, "red");
+myCar.max_speed(); // => "This car can go over 9000mph!"
+          </pre>
+        </div>
+      </div>
+      <p>There, that is how one would do basically the same thing in either ruby or javascript. I hope this was good starting point for learning to adapt between more than one language.</p>
+    </article>
+  </section>
+</main>
+
+    <footer>
+      <h4>Contact Me</h4>
+      <ul>
+        <li>
+          <a href="mailto:JohnPolhill42@gmail.com" target="_blank">
+            <img src="../imgs/mail-icon.png" alt="E-mail" height="32">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/john.polhill.3" target="_blank">
+            <img src="../imgs/fb-icon.png" alt="Facebook" height="32">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/profile/view?id=AAIAABqp07wByyz-f2f-dwmX4z2h9xvQtDSoj9s" target="_blank">
+            <img src="../imgs/in-icon.png" alt="LinkdIn" height="32">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/JohnP42" target="_blank">
+            <img src="../imgs/git-icon.png" alt="Github" height="32">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/JohnPolhill42" target="_blank">
+            <img src="../imgs/twitter-icon.png" alt="Twitter" height="32">
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+</body>
+</html>
