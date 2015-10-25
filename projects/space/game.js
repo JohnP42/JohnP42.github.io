@@ -17,6 +17,11 @@ var player = new PlayerShip(224, 430, "space/ship.png", "space/ship2.png");
 //Score
 var scoreText = document.getElementById("score");
 var score = 0;
+var highscore = 0;
+
+if (localStorage.getItem("highscore")) {
+        highscore = localStorage.getItem("highscore");
+}
 
 //Paused
 var gamePaused = true;
@@ -92,8 +97,14 @@ var reset = function() {
 
 var update = function (modifier) {
 
-	if(!player.alive)
+	if(!player.alive){
+
+		if(highscore < score) {
+			localStorage.setItem("highscore", score);
+			highscore = score;
+		}
 		gamePaused = true;
+	}
 	player.update(keysDown, modifier, asteroids, peons);
 	bgY = bgY >= 480 ? 0 : bgY + 2;
 
@@ -201,12 +212,15 @@ var render = function() {
 	context.fillText("Score: " + score,5, 15);
 	if(gamePaused)
 		context.fillText("Press Enter to Start!", 165, 250);
+	context.fillStyle = 'red';
+	context.fillText("High Score: " + highscore, 372 - (highscore.toString().length * 9), 15);
+	
 	if(!player.alive) {
 		context.font="36px Arial";
-		context.fillStyle = 'red';
 		context.fillText("GAME OVER", 135, 220);
+		if(highscore === score)
+			context.fillText("New High Score!", 110, 180);
 	}
-
 	//Explosions
 	for(var i = 0; i < booms.length; i++) {
 		context.drawImage(imgExplosion, booms[i].imgIndex * 32 + 32, 0, 32, 32, booms[i].x - 8, booms[i].y - 8, 48, 48);
