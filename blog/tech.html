@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>John's Tech Blog 3</title>
+  <title>John's Tech Blog Variables</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheet/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheet/blog.css">
-  <script src="../jquery/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
@@ -40,43 +39,33 @@
     </aside>
 
     <article>
-      <h2>Week 4</h2>
-      <h2>Arrays and Hashes</h2>
-      <h4>9/30/2015</h4>
+      <h2>Week 8</h2>
+      <h2>Dynamic vs Typed Variables</h2>
+      <h4>11/2/2015</h4>
 
-      <p>Arrays and hashes are both able to store multiple objects, but in different ways. So, here are some interactive demonstrations to show how each work.</p>
+      <p>There are two ways that programming languages handle variable declaration, dynamic typing or static typing.</p>
 
-      <p>First, the array which stores objects in a linear fashion, much like a to do list. You can add, remove, or change items in the list. Always remember, an array counts from 0.</p>
+      <p>Static typing is when the variable type known at compile time, thus the type must be declared by the programmer. Examples of languages that use this kind of typing are Java, C#, C, C++. The main advantage of this kind of typing language is that these variables can be checked by the compiler, which will check for bugs.</p>
 
-      <section id="array"> 
-        <h3>An Array Example</h3>  
-        <button type="button" id="push">push item</button>
-        <input type="text" name="item" value="item">
-        <ul>
-        </ul>
-        <button type="button" id="pop">pop item</button><br>
+      <pre>
+int num = 5;
+String word = "hello";
+boolean isStatic = true;
 
-        <button type="button" id="get">get item</button>
-        <input type="text" name="input" value="0"><br>
-        <p id="output"></p>
-      </section>
+//This would raise a type exception
+num = word;
+      </pre>
 
-      <p>Okay, now for hashes. A hash works by using a key and value. The key points to a value, and you may have multiples of the same value, but each key must be unique.</p>
+      <p>Dynamic typing is when variable type is interpreted at run time, this the type does not have to be declared. Examples of languages that so this would be Ruby, Javascript, Python, and Perl. The advantage of this kind of language is that programming can be a bit faster because you  can eschew declaring a type, though bugs can be a little harder to find.</p>
 
-      <section id="hash">   
-        <h3>A Hash Example</h3>  
-        <button type="button" id="add">add key-value</button>
-        <input type="text" name="key" value="key">
-        <input type="text" name="value" value="value">
-        <ul>
-        </ul>
-        <button type="button" id="remove">remove key</button>
-        <button type="button" id="get_key">get key</button>
-        <input type="text" name="input_key" value="key"><br>
-        <p id="output_value"></p>
-      </section>
+      <pre>
+var num = 5;
+var word = "hello";
+var isStatic = false;
 
-      <p>Anyway, I hope that these interactive examples helped explain arrays and hashes better than I could with words.</p>
+//This would be fine
+num = word;
+      </pre>
 
     </article>
   </section>
@@ -113,6 +102,5 @@
       </ul>
     </footer>
 
-  <script src="scripts/array-hashes.js"></script>
 </body>
 </html>
