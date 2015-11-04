@@ -1,0 +1,34 @@
+section li {
+	display: inline-block;
+	background-color: #777777;
+	padding: 5px 5px 0px 5px;
+	border-radius: 5px;
+	border: 2px ridge black;
+	width: 128px;
+	height: 256px;
+	overflow: auto;
+}
+
+section a {
+	text-decoration: none;
+	color: black;
+}
+
+section a h3 {
+	text-align: center;
+	margin: 2px;
+}
+
+section a p {
+	margin: 5px;
+	padding: 2px;
+	background-color: #AFAFAF;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+section a img {
+	display: block;
+    margin: 0 auto;
+	border-radius: 5px;	
+}
