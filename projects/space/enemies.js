@@ -147,7 +147,8 @@ function Beamer() {
 }
 
 function ShotE(x, y, d) {
-	new Audio('space/sounds/lazer2.wav').play();
+	if(y < 500)
+		new Audio('space/sounds/lazer2.wav').play();
 	this.x = x;
 	this.y = y;
 	this.img = imgLaserY;
@@ -165,7 +166,8 @@ function ShotE(x, y, d) {
 }
 
 function ShotV(x, y, d) {
-	new Audio('space/sounds/lazer2.wav').play();
+	if(y < 500)
+		new Audio('space/sounds/lazer2.wav').play();
 	this.x = x;
 	this.y = y;
 	this.img = imgLaserV;
