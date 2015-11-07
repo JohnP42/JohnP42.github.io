@@ -199,7 +199,7 @@
         <p>Returns two arrays, the first containing the elements of enum for which the block evaluates to true, the second containing the rest. If no block is given, an enumerator is returned instead.</p>
       </blockquote>
       <pre class='brush: ruby'>
-        <p>(1..6).partition { |v| v.even? }  #=> [[2, 4, 6], [1, 3, 5]]</p>
+        (1..6).partition { |v| v.even? }  #=> [[2, 4, 6], [1, 3, 5]]
       </pre>
       <p>So, if you ever need to divide an array or a hash along a single seem, such as even or odd, greater than 0 or less than or equal to 0, item is a string or an integer, etc. you should consider using partition to expedite the process.</p>
     </article>
