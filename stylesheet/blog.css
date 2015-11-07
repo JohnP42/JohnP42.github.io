@@ -48,16 +48,6 @@ img {
 	margin:5px auto;
 }
 
-.special {
-	transition: 0.5s;
-	border: 1px solid black;
-}
-
-.special:hover {
-	border: 1px solid red;
-	transition: 0.5s;
-}
-
 pre {
   font-family: monospace;
   background-color: #F4F4F4;
@@ -71,7 +61,7 @@ pre {
 
 .row {
 	text-align: center;
-	border-top: 2px ridge grey;
+	border-top: 2px ridge #CCC;
 	padding-top: 10px;
 	margin-top: 50px;
 }
