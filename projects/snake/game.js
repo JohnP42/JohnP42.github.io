@@ -81,6 +81,12 @@ addEventListener("keyup", function(e){
 	delete keysDown[e.keyCode];
 }, false);
 
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
 //Reset the game
 var reset = function() {
 	snakeHead.x = 8;
@@ -97,16 +103,16 @@ var update = function (modifier) {
 		snakeHead.body[i].y = snakeHead.body[i].parent.y;
 	}
 
-	if (87 in keysDown && snakeHead.dir !== 'D') { // Player holding up
+	if (38 in keysDown && snakeHead.dir !== 'D') { // Player holding up
 		snakeHead.dir = 'U';
 	}
-	if (83 in keysDown && snakeHead.dir !== 'U') { // Player holding down
+	if (40 in keysDown && snakeHead.dir !== 'U') { // Player holding down
 		snakeHead.dir = 'D';
 	}
-	if (65 in keysDown && snakeHead.dir !== 'R') { // Player holding left
+	if (37 in keysDown && snakeHead.dir !== 'R') { // Player holding left
 		snakeHead.dir = 'L';
 	}
-	if (68 in keysDown && snakeHead.dir !== 'L') { // Player holding right
+	if (39 in keysDown && snakeHead.dir !== 'L') { // Player holding right
 		snakeHead.dir = 'R';
 	}
 
