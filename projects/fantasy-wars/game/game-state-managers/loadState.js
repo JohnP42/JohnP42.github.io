@@ -20,8 +20,8 @@ function _loadText() {
 };
 
 function _loadAudio() {
-  game.load.audio('move', 'fantasy-wars/game/assets/audio/SE/move.ogg');
-  game.load.audio('coin', 'fantasy-wars/game/assets/audio/SE/coin.ogg');
+  game.load.audio('move', 'fantasy-wars/game/assets/audio/SE/Move.ogg');
+  game.load.audio('coin', 'fantasy-wars/game/assets/audio/SE/Coin.ogg');
   game.load.audio('rifle', 'fantasy-wars/game/assets/audio/SE/rifle.ogg');
   game.load.audio('capture', 'fantasy-wars/game/assets/audio/SE/capture.ogg');
   game.load.audio('battleButton', 'fantasy-wars/game/assets/audio/SE/battleButton.ogg');
