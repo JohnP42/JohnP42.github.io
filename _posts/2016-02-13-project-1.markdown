@@ -7,6 +7,6 @@ alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
 category: Web Development
-description: <a href="https://github.com/JohnP42/Fantasy-Wars">Fantasy Wars</a> is a turn-based strategy game programmed in Javascript using the Phaser framework. This was and idea that I pitched for the final project at Dev Bootcamp and it was written in 8 days by a team of four. I oversaw the project as the tech lead and was responsible for programming the core game mechanics. Furthermore, I was the head game designer and created the unit spritesheet from scratch. You can play it <a href="http://johnp42.github.io/old-site/projects/fantasy-wars.html">here</a>.
+description: <a href="https://github.com/JohnP42/Fantasy-Wars">Fantasy Wars</a> is a turn-based strategy game programmed in Javascript using the Phaser framework. This was and idea that I pitched for the final project at Dev Bootcamp and it was written in 8 days by a team of four. I oversaw the project as the tech lead and was responsible for programming the core game mechanics. Furthermore, I was the head game designer and created the unit spritesheet from scratch. You can play Fantasy Wars <a href="http://johnp42.github.io/old-site/projects/fantasy-wars.html">here</a>.
 
 ---
