@@ -1,0 +1,12 @@
+---
+layout: default
+model-id: 4
+date: 2016-03-26
+img: wargame-campaign.png
+alt: image-alt
+project-date: March 2016
+client: Start Bootstrap
+category: Web Development
+description: <a href="https://github.com/JohnP42/wargame-campaign">Wargame Campaign</a> is an online table-top wargame campaign management system, where a user can create maps and armies to use and share with other users, as well as host online campaigns for their table-top games. This project took about 4 days to create, and was done using Ruby on Rails. This website is currently in beta form and is live on Heroku. It can be used <a href="http://wargamecampaign.herokuapp.com">here</a>.
+
+---

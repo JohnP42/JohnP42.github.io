@@ -1,0 +1,12 @@
+---
+layout: default
+model-id: 5
+date: 2013-03-27
+img: game.png
+alt: image-alt
+project-date: March 2016
+client: Start Bootstrap
+category: Web Development
+description: More to Come!
+
+---
