@@ -1,6 +1,6 @@
 ---
 layout: default
-model-id: 4
+modal-id: 4
 date: 2016-03-26
 img: wargame-campaign.png
 alt: image-alt

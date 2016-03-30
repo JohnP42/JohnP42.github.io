@@ -1,6 +1,6 @@
 ---
 layout: default
-model-id: 5
+modal-id: 5
 date: 2013-03-27
 img: game.png
 alt: image-alt
