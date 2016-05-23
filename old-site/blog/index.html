@@ -24,7 +24,7 @@
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../projects/index.html">Projects</a></li>
-        <li><a href="/resume">Resume</a></li>
+        <li><a href="../resume.html">Resume</a></li>
         <li><a href="index.html">Blog</a></li>
         <li><a href="../about.html">About</a></li>
       </ul>
@@ -49,7 +49,7 @@
       <h4>9/13/2015</h4>
 
       <p>
-          I believe that an introduction is in order. My name is John Polhill. I am 20 years old currently living in Aurora IL and, like many of you that are reading this post, this is my first week of phase 0 in Dev Bootcamp. So, with that out of the way I will introduce the first topic. What are the benefits of version control? Well, I personally have not found version control to be very useful for the projects I would normally work on; however, that is only because I am a hobbyist when it comes to programming and all the work I do is solo and for fun. So, I have yet the need to keep record of my progress on a project. I do believe that when working on larger, team oriented projects that the benefits of using version control would increase exponentially. Having the ability to record the work of multiple parties and manage which of those works are accepted would be a huge boon to organization and productivity. As such, I am very certain that version control will become very beneficial for me in the future. 
+          I believe that an introduction is in order. My name is John Polhill. I am 20 years old currently living in Aurora IL and, like many of you that are reading this post, this is my first week of phase 0 in Dev Bootcamp. So, with that out of the way I will introduce the first topic. What are the benefits of version control? Well, I personally have not found version control to be very useful for the projects I would normally work on; however, that is only because I am a hobbyist when it comes to programming and all the work I do is solo and for fun. So, I have yet the need to keep record of my progress on a project. I do believe that when working on larger, team oriented projects that the benefits of using version control would increase exponentially. Having the ability to record the work of multiple parties and manage which of those works are accepted would be a huge boon to organization and productivity. As such, I am very certain that version control will become very beneficial for me in the future.
       </p>
       <p>
             Now that I've covered how I see version control, I will mention the software that has provided it, Git. Git will record different states of progress that one will be able to revert to and from. This allows for the ability to make major alterations without the fear of ruining the current working state of a project. Also, when a state is saved, or committed, one may include a message to describe the changes made to a project. This also helps when working on a team so members can relay information on the work they have done and at what times it was done. The ability to share information is vital to any team's success.
@@ -65,7 +65,7 @@
       <h4>9/22/2015</h4>
 
       <p>
-        Margin, border, and padding are some of the most fundamental parts of css when it comes to positioning elements on your web page, So here is a quick introduction followed by a couple tricks that you may not yet have learned. In the simplest terms, border is the outline of the rectangle that is your element, margin is the extra distance outside of the border, and padding is the distance from the border to the content. I think this picture sums it up very nicely. 
+        Margin, border, and padding are some of the most fundamental parts of css when it comes to positioning elements on your web page, So here is a quick introduction followed by a couple tricks that you may not yet have learned. In the simplest terms, border is the outline of the rectangle that is your element, margin is the extra distance outside of the border, and padding is the distance from the border to the content. I think this picture sums it up very nicely.
       </p>
       <img src="../imgs/mbpc.png" alt="w3school box-model">
       <hr>
@@ -101,7 +101,7 @@
         In this scenario, h1 has a bottom margin of 20px, and p has a top margin of 30px, so one would expect the total distance between h1 and p would be 50px. However, the distance will actually be the greater of the two, so the total distance will be 30px. But, if you add a border the total distance will add instead, making the total distance 50px.
       </p>
       <hr>
-      <p> 
+      <p>
         Now lets get a few tips for padding. The size of an element when using padding is equal to the width or height plus the padding, rather than the just the assigned width or height. For example:
       </p>
       <pre class='brush: css'>
@@ -112,7 +112,7 @@
         }
       </pre>
       <p>
-        On might expect the total width of the box to be 100px, since it was assigned a width of 100px. However, the actual width of the box will be 140px (100px + 20px + 20px). You may choose to change this using: 
+        On might expect the total width of the box to be 100px, since it was assigned a width of 100px. However, the actual width of the box will be 140px (100px + 20px + 20px). You may choose to change this using:
       </p>
       <pre class='brush: css'>
         /* CSS */
@@ -127,7 +127,7 @@
       </p>
       <hr>
       <p>
-        Also, borders are cool... Okay, since borders are very straight forward I will include a special bonus tip instead. If you would like to have an element that changes when the mouse hovers over it try this: 
+        Also, borders are cool... Okay, since borders are very straight forward I will include a special bonus tip instead. If you would like to have an element that changes when the mouse hovers over it try this:
       </p>
       <pre class='brush: css'>
         /* CSS */
@@ -140,7 +140,7 @@
           border: 1px solid red;
           transition: 0.5s;
         }
-      </pre> 
+      </pre>
       <p>
         This will make it so that when you hover your mouse over a div its border will turn red instead of black, and back to black when your done hovering. The transition will also make this shift gradual over a certain time rather than instant. Well, hopefully you learned something new by reading this. Hope you all are having fun at DBC!
       </p>
@@ -155,8 +155,8 @@
 
       <p>First, the array which stores objects in a linear fashion, much like a to do list. You can add, remove, or change items in the list. Always remember, an array counts from 0.</p>
 
-      <section id="array"> 
-        <h3>An Array Example</h3>  
+      <section id="array">
+        <h3>An Array Example</h3>
         <button type="button" id="push">push item</button>
         <input type="text" name="item" value="item">
         <ul>
@@ -170,8 +170,8 @@
 
       <p>Okay, now for hashes. A hash works by using a key and value. The key points to a value, and you may have multiples of the same value, but each key must be unique.</p>
 
-      <section id="hash">   
-        <h3>A Hash Example</h3>  
+      <section id="hash">
+        <h3>A Hash Example</h3>
         <button type="button" id="add">add key-value</button>
         <input type="text" name="key" value="key">
         <input type="text" name="value" value="value">
@@ -225,7 +225,7 @@
 
           def parameter
             @width*2 + @height*2
-          end 
+          end
         end
       </pre>
 
@@ -261,7 +261,7 @@
         <div class="col">
           <p>Define Ruby class</p>
           <pre class="brush: ruby">
-class Car 
+class Car
 
 end
           </pre>
@@ -277,12 +277,12 @@ function Car() {
       </div>
 
       <p>Pretty stright forward so far, this is just how to define a new class/constructor-function. Next I'll show how to initialize their variables.</p>
-          
+
       <div class="row">
         <div class="col">
           <p>Ruby initialization</p>
           <pre class="brush: ruby">
-class Car 
+class Car
 
   def initialize(speed, color)
     @speed = speed
@@ -312,7 +312,7 @@ function Car(speed, color) {
         <div class="col">
           <p>Ruby instance method</p>
           <pre class="brush: ruby">
-class Car 
+class Car
 
   def initialize(speed, color)
     @speed = speed
@@ -351,7 +351,7 @@ Car.prototype = {
         <div class="col">
           <p>Ruby instantiate object</p>
           <pre class="brush: ruby">
-class Car 
+class Car
 
   def initialize(speed, color)
     @speed = speed
