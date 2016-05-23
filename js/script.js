@@ -1,8 +1,7 @@
 var trivia = [
   "My favorite super hero is Spider-man.",
   "My favorite color is red (that's probably obvious).",
-  "I've lived in all corners of the US and have even been to Panama.",
-  "The first programming language I masted was GML (Game Maker Language).",
+  "The first programming language I mastered was GML (Game Maker Language).",
   "I chose Bulbasaur as my first pokemon.",
   "I sang Mr. Grinch in a talent show; I didn't win.",
   "I have an army of Dwarfs.",
