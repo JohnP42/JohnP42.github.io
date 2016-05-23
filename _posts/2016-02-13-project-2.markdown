@@ -1,12 +1,10 @@
 ---
 layout: default
-modal-id: 2
+title: Super Luigi
+model-id: 2
 date: 2014-07-17
 img: superLuigi.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
 description: <a href="https://github.com/JohnP42/super-luigi">Super Luigi</a> is a Super Mario Bros. clone written in C# using the XNA framework. This was a for-fun project done on my free time and was completed in 1 week. I focused heavily on the object oriented portion of this project and the principles of game development. Gameplay can be viewed <a href="https://www.youtube.com/watch?v=FAfcaCUaork">here</a>.
 
 

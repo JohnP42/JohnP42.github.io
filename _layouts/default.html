@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
-    <body id="page-top" class="index">
-    {% include nav.html %}
+
+  {% include head.html %}
+
+  <body>
     {% include header.html %}
-    {% include portfolio_grid.html %}
-    {% include about.html %}
-
-    {% if site.contact == "static" %}
-    {% include contact_static.html %}
-    {% elsif site.contact == "disqus" %}
-    {% include contact_disqus.html %}
-    {% else %}
-    {% include contact.html %}
-    {% endif %}
-
+    <div class="page-content">
+        {{ content }}
+    </div>
+    {% include models.html %}
     {% include footer.html %}
-    {% include modals.html %}
-    {% include js.html %}
-    </body>
+    <script src="{{ site.baseurl }}/js/jquery-1.12.4.min.js"></script>
+    <script src="{{ site.baseurl }}/js/jquery-ui.min.js"></script>
+    <script src="https://use.fontawesome.com/0906975ec7.js"></script>
+    <script src="{{ site.baseurl }}/js/slide.js"></script>
+    <script src="{{ site.baseurl }}/js/projects.js"></script>
+    <script src="{{ site.baseurl }}/js/script.js"></script>
+  </body>
+
 </html>

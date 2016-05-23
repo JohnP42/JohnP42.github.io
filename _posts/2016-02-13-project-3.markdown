@@ -1,12 +1,9 @@
 ---
 layout: default
-modal-id: 3
+title: Rapid Fire
+model-id: 3
 date: 2014-07-17
 img: rapid-fire.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
 description: <a href="https://github.com/JohnP42/rapid-fire">Rapid Fire</a> is a Wario Ware clone written in Java for an Android device. This was a project to get me started on Android development. I focused learning the Android API and adjusting to a different kind of programming environment.
-
 ---

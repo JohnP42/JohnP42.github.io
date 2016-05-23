@@ -1,0 +1,9 @@
+<div id="all-posts" class="container">
+{% for post in site.posts %}
+  <div id="project-{{post.model-id}}" class="project text-center" style="display: none;">
+    <h1>{{post.title}}</h1>
+    <img src="{{site.baseurl}}/img/portfolio/{{post.img}}">
+    <p>{{post.description}}</p>
+  </div>
+{% endfor %}
+</div>
