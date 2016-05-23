@@ -12,7 +12,8 @@ var trivia = [
   "Personally, I prefer Luigi to Mario.",
   "I can't whistle (yet).",
   "I have a bad habit of swallowing my gum (but I'm still alive).",
-  "Captain America: Civil War was great, you should go see it!"
+  "Captain America: Civil War was great, you should go see it!",
+  "The copyright statement at the bottom is only there to make the page look better."
 ]
 
 $(document).ready(function() {
