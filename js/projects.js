@@ -6,6 +6,7 @@ function projects() {
     $(".project").hide();
     var id = $(this).attr("href");
     $("#" + id).show("slide", {direction: "up"});
-    $("html, body").animate({scrollTop: $(document).height()}, "slow");
+    var distance = $("#all-posts").offset().top;
+    $("html, body").animate({scrollTop: distance}, "slow");
   });
 }
