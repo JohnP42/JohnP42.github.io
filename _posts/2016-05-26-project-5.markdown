@@ -1,0 +1,9 @@
+---
+layout: default
+title: Warscroll Compendium
+model-id: 5
+date: 2016-05-26
+img: warscroll-compendium.png
+alt: image-alt
+description: <a href="https://github.com/JohnP42/AoS-Warscroll-Compendium" target="_blank">Warscroll Compendium</a> is a convenient archive of the many warscrolls used in the table top game Age of Sigmar. This project was used as a way to become more familiar in working with Node JS, Express, Sass, web scraping, and Ajax in Node JS. This project is currently live and deployed to Heroku and can be viewed <a href="https://warscrollcompendium.herokuapp.com/" target="_blank">here.</a>
+---
