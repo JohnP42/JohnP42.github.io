@@ -248,7 +248,7 @@ pre {
   margin: 5px;
   display: inline-block;
   list-style: none;
-  border: 2px ridge $grey-color;
+  border: 2px ridge $grey-color-light;
   min-width: 150px;
 }
 
@@ -276,31 +276,6 @@ pre {
     transition: $speed;
   }
 }
-
-#all-posts {
-  background-color: $grey-color-light;
-  color: $secondary;
-  width: 100%;
-
-  h1 {
-    margin-top: $spacing-unit / 2;
-  }
-
-  img {
-    border: 4px ridge $grey-color;
-    max-width: 80%;
-    margin-bottom: $spacing-unit / 2;
-  }
-
-  a {
-    color: $primary;
-    &:hover {
-      color: darken($primary, 20%);
-    }
-  }
-
-}
-
 
 #about {
 
