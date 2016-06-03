@@ -21,12 +21,6 @@ contact: static
 # Build settings
 markdown: kramdown
 
-color:
-  primary: B81D18 #B81D18
-  primary-rgb: "184,29,24" #"184,29,24"
-  secondary: 202020 #202020
-  secondary-dark: 101010 #101010
-
 footer:
   copyright: John Polhill
   location: Location
