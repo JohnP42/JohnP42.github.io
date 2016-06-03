@@ -96,11 +96,15 @@ a {
     transition: 0.25s;
 
     &:visited {
-        color: darken($text-color, 15%);
+      color: darken($text-color, 15%);
     }
-
+    &:focus {
+      color: $text-color;
+      text-decoration: none;
+      transition: 0.25s;
+    }
     &:hover {
-        color: $primary;
+        color: $brand-color;
         text-decoration: none;
         transition: 0.25s;
     }
