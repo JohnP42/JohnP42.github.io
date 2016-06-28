@@ -47,6 +47,7 @@
 
     @include media-query($on-palm) {
         position: absolute;
+        z-index: 1;
         top: 9px;
         right: $spacing-unit / 2;
         background-color: $background-color;
@@ -60,7 +61,7 @@
             width: 36px;
             height: 26px;
             line-height: 0;
-            padding-top: 10px;
+            padding: 5px;
             text-align: center;
 
             > svg {
@@ -181,7 +182,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0 0;
 }
 
 .page-heading {

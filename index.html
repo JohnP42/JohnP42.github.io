@@ -8,41 +8,49 @@ layout: default
   <div class="row">
     <div class="slider">
       <section id="skills" class="page active">
-        <img src="{{ site.baseurl }}/{{ site.profile }}" alt="profile" width="250rem">
-        <h1 class="big-title">{{ site.title }}</h1>
-        <p id="skill-list">{{ site.skills }}</p>
+        <div class="inner-page">
+          <img src="{{ site.baseurl }}/{{ site.profile }}" alt="profile" width="250rem">
+          <h1 class="big-title">{{ site.title }}</h1>
+          <p id="skill-list">{{ site.skills }}</p>
+        </div>
       </section>
 
       <section id="portfolio" class="page" style="display: none;">
-        <h1 class="big-title">Portfolio</h1>
-        <ul id="projects">
-          {% for post in site.posts %}
-            <li>
-              <a href="project-{{post.model-id}}">
-                <img width="200px" src="{{site.baseurl}}/img/portfolio/{{post.img}}">
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+        <div class="inner-page">
+          <h1 class="big-title">Portfolio</h1>
+          <ul id="projects">
+            {% for post in site.posts %}
+              <li>
+                <a href="project-{{post.model-id}}">
+                  <img width="200px" src="{{site.baseurl}}/img/portfolio/{{post.img}}">
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </section>
 
       <section id="about" class="page" style="display: none;">
-        <h1 class="big-title">About</h1>
-        <div class="col-lg-8 text-left">
-          <p>Ever since writing my first program, "Hello World" when I was twelve years old, I knew that programming was what I wanted to do for the rest of my life. And more than just that, I knew I wanted to create anything I could!</p>
+        <div class="inner-page">
+          <h1 class="big-title">About</h1>
+          <div class="col-lg-8 text-left">
+            <p>Ever since writing my first program, "Hello World" when I was twelve years old, I knew that programming was what I wanted to do for the rest of my life. And more than just that, I knew I wanted to create anything I could!</p>
 
-          <p>Now, I strive to continue learning and improving myself. Which is one of the primary reasons I went through Dev Bootcamp. Everyday, as long as I am stronger than I was yesterday, I am moving in the right direction.</p>
-        </div>
-        <div class="col-lg-8 text-center">
-            <a href="img/JohnPolhill_Resume.pdf" class="btn-resume btn-lg btn-outline" target="_blank">
-                View Resume
-            </a>
+            <p>Now, I strive to continue learning and improving myself. Which is one of the primary reasons I went through Dev Bootcamp. Everyday, as long as I am stronger than I was yesterday, I am moving in the right direction.</p>
+          </div>
+          <div class="col-lg-8 text-center">
+              <a href="img/JohnPolhill_Resume.pdf" class="btn-resume btn-lg btn-outline" target="_blank">
+                  View Resume
+              </a>
+          </div>
         </div>
       </section>
 
       <section id="contact" class="page" style="display: none;">
-        <h1 class="big-title">Contact Me</h1>
-        <p>If you're ever interested in talking about anything code related or anything else, feel free to email me at<br><a href="mailto:JohnPolhill42@gmail.com?" target="_blank">JohnPolhill42@gmail.com</a></p>
+        <div class="inner-page">
+          <h1 class="big-title">Contact Me</h1>
+          <p>If you're ever interested in talking about anything code related or anything else, feel free to email me at<br><a href="mailto:JohnPolhill42@gmail.com?" target="_blank">JohnPolhill42@gmail.com</a></p>
+        </div>
       </section>
     </div>
   </div>

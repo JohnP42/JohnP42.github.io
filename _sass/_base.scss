@@ -8,7 +8,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+.slider, .row, .container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
 
 /**
  * Basic styling
@@ -65,9 +69,7 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
-}
+
 
 li {
     > ul,
@@ -214,33 +216,46 @@ pre {
 .page-content {
   background-color: $primary;
   color: $brand_color;
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 600px;
   width: 100%;
 }
 
-.left-arrow {
-  margin-top: 150px;
-  min-width: 50px;
-  transition: $speed;
+.page {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
 }
 
-.right-arrow {
-  margin-top: 150px;
+.inner-page {
+  margin: auto;
+  padding: 0px 50px;
+}
+
+.left-arrow, .right-arrow {
   min-width: 50px;
   transition: $speed;
+  position: relative;
+  z-index: 1;
 }
 
 .left-arrow:hover {
   /*margin-top: 145px;*/
-  margin-right: 10px;
+  padding-right: 10px;
   transition: $speed;
 }
 
 .right-arrow:hover {
   /*margin-top: 145px;*/
-  margin-left: 10px;
+  padding-left: 10px;
   transition: $speed;
 }
 
