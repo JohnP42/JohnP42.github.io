@@ -4,7 +4,7 @@ var trivia = [
   "The first programming language I mastered was GML (Game Maker Language).",
   "I chose Bulbasaur as my first pokemon.",
   "I sang Mr. Grinch in a talent show; I didn't win.",
-  "I have an army of Dwarves.",
+  "I'm 50 percent Panamanian.",
   "If you refresh the page this trivia fact will change.",
   "I've hand made 2 bows and arrows.",
   "My favorite super hero movie is The Dark Knight.",
